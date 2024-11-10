@@ -9,8 +9,12 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
+        // Home / 영화 상세 페이지
         <Route path="/" element={<Home />} />
+        <Route path="/movies/:movieId" element={<Home />} />
+        // Tv 페이지
         <Route path="/tv" element={<Tv />} />
+        // Search 페이지
         <Route path="/search" element={<Search />} />
       </Routes>
     </BrowserRouter>
